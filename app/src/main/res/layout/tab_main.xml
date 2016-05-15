@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/tabmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/tabmain_classify"
+                style="@style/tabmain_bottom"
+                android:drawableTop="@drawable/tab_home_selector"
+                android:text="weather" />
+
+            <RadioButton
+                android:id="@+id/tabmain_living"
+                style="@style/tabmain_bottom"
+                android:drawableTop="@drawable/tab_living_selector"
+                android:text="laugh" />
+
+            <RadioButton
+                android:id="@+id/tabmain_local"
+                style="@style/tabmain_bottom"
+                android:drawableTop="@drawable/tab_local_selector"
+                android:text="lovebible" />
+
+            <RadioButton
+                android:id="@+id/tabmain_my"
+                style="@style/tabmain_bottom"
+                android:drawableTop="@drawable/tab_my_selector"
+                android:text="test" />
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>
