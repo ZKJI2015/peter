@@ -26,8 +26,8 @@ import java.util.List;
 
 public class LaughActivity extends AppCompatActivity {
 
-    EditText mTextView;
     long startTime;
+    EditText mTextView;
 
     @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {
